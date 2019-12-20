@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_12_19_213554) do
+ActiveRecord::Schema.define(version: 2019_12_20_065800) do
 
   create_table "tasks", force: :cascade do |t|
     t.string "subj"
@@ -18,6 +18,7 @@ ActiveRecord::Schema.define(version: 2019_12_19_213554) do
     t.boolean "status"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.integer "user_id"
   end
 
 end
